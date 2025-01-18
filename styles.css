@@ -1,0 +1,358 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f3f4f6; /* Fondo claro y neutral */
+}
+
+/* Encabezado */
+/* Estilo para el contenedor del menú */
+nav {
+    background-color: #487da2; /* Color de fondo del menú */
+    padding: 10px 20px;
+    text-align: center; /* Centrar los enlaces horizontalmente */
+}
+
+.boton-donar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #69c1e1; /* Color cálido llamativo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-donar:hover {
+    background-color: #4aaad0; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para los enlaces del menú */
+nav a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    font-weight: bold; /* Negrita */
+    font-size: 1.1em; /* Tamaño del texto */
+    transition: color 0.3s ease; /* Transición suave en el color */
+}
+
+/* Efecto hover en los enlaces */
+nav a:hover {
+    color: #ffe6e2; /* Cambia el color al pasar el ratón */
+}
+
+header {
+    background-color: #487da2; /* Color cálido y amigable */
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Sección de Proyectos */
+#proyectos {
+    padding: 20px;
+    background-color: #fff; /* Fondo limpio para contraste */
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos h2 {
+    text-align: center;
+    color: #487da2;
+    margin-bottom: 20px;
+}
+
+#proyectos article {
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos article h3 {
+    color: #333;
+}
+
+#proyectos article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 20px;
+    background-color: #eef7f9; /* Suave azul para enfoque */
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #487da2;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contacto label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto button {
+    background-color:  #487da2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #487da2;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #487da2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #proyectos, #contacto {
+        padding: 15px;
+        margin: 15px;
+    }
+}
+
+ /* Estilo para alinear imagen y texto horizontalmente */
+.proyecto {
+    display: flex; /* Flexbox para alinear en fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 20px; /* Separación entre artículos */
+}
+
+.proyecto img {
+    width: 400px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.proyecto div {
+    flex: 1; /* El texto ocupa el espacio restante */
+}
+
+/* Estilo para el botón "Adopta aquí" */
+.btn-adopta {
+    display: inline-block;
+    background-color: #69c1e1; /* Color azul pastel */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 5px;
+    margin-top: 20px; /* Separación entre el texto y el botón */
+    font-size: 1.1em;
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.btn-adopta:hover {
+    background-color: c; /* Cambio de color al pasar el mouse (azul más oscuro) */
+}
+
+.proyecto {
+    margin-bottom: 30px;
+}
+
+.proyecto h3 {
+    text-align: center;
+    color: #4aaad0;
+    margin-bottom: 10px;
+}
+
+.texto-principal {
+    font-family: 'Georgia', serif;
+    font-size: 0.987em; /* Ajusta el tamaño aquí */
+    color: #2c3e50;
+    font-weight: normal; /* Cambia a "bold" si necesitas un grosor extra */
+    text-align: left;
+    line-height: 1.5; /* Ajusta la separación entre líneas si es necesario */
+}
+
+
+.texto-secundario {
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.collage {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.collage img {
+    width: 150px; /* Tamaño uniforme */
+    height: 150px;
+    object-fit: cover; /* Asegura que las imágenes mantengan proporción */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.collage img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .proyecto .collage {
+        grid-template-columns: 1fr; /* Una sola columna para móviles */
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #proyectos, #contacto {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .collage {
+        display: grid;
+        grid-template-columns: 1fr; /* En dispositivos pequeños, las imágenes estarán en una sola columna */
+        gap: 10px; /* Espacio entre las imágenes */
+    }
+
+    .proyecto {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+
+    .proyecto img {
+        width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+        height: auto; /* Mantienen las proporciones */
+    }
+
+    #contacto {
+        width: 100%; /* Asegura que el formulario ocupe todo el ancho en pantallas pequeñas */
+        max-width: 100%;
+    }
+
+    #contacto input, #contacto textarea, #contacto button {
+        width: 100%; /* Los campos de texto y el botón se expanden */
+    }
+}
+
+/* Opcionalmente, si quieres que el collage tenga 4 columnas en pantallas más grandes */
+@media (min-width: 768px) {
+    .collage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas más grandes */
+        gap: 10px;
+    }
+}
+
+
+/* Estilo para la sección de "Adopciones Responsables" */
+.proyecto {
+    display: flex; /* Flexbox para alinear los elementos en una fila */
+    flex-direction: row; /* Alinea las imágenes a la derecha */
+    gap: 20px; /* Espacio entre el texto y las imágenes */
+    margin-bottom: 20px; /* Separación entre proyectos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Contenedor del texto de "Adopciones Responsables" */
+.texto-proyecto {
+    display: flex;
+    flex-direction: column; /* Alinea el título y el texto de manera vertical */
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+/* Asegúrate de que el texto no se sobrepase de su contenedor */
+.texto-principal {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilo para el collage de imágenes */
+.collage {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.collage img {
+    width: 150px; /* Asegura que las imágenes no sean demasiado grandes */
+    height: 150px;
+    object-fit: cover; /* Mantiene la proporción de las imágenes */
+    border-radius: 8px;
+}
